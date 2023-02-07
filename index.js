@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://astounding-sprite-d7de84.netlify.app/",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
@@ -32,6 +32,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3001, () => {
+server.listen(3000, () => {
   console.log("Servidor rodando");
 });
