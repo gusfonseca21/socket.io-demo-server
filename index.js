@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: "https://astounding-sprite-d7de84.netlify.app/",
     methods: ["GET", "POST"],
   },
 });
